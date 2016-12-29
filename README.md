@@ -1,4 +1,4 @@
-# PyEmailServerDown
+# PyEmailWebsiteDown
 
 Python3 send email notification if your website is down.
 
