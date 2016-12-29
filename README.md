@@ -1,5 +1,6 @@
-# TestUrl
-Email notification if your website is down.
+# PyEmailServerDown
+
+Python3 send email notification if your website is down.
 
 ## Instalation
 This application requires [python3](https://docs.python.org/3/) and module [requests](http://docs.python-requests.org/en/master/)
