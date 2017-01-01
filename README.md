@@ -38,5 +38,5 @@ crontab -u username -e
 ```
 add the line 
 ```
-@daily python3 /path/to/testUrl/testurl.py
+@daily python3 /path/to/PyEmailWebsiteDown/testurl.py
 ```
