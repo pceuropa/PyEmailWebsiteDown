@@ -1,16 +1,29 @@
 # PyEmailWebsiteDown
 
-Python3 send email notification if your website is down.
+App send email notification if your website is down.
 
 ## Instalation
-This application requires [python3](https://docs.python.org/3/) and module [requests](http://docs.python-requests.org/en/master/)
-```
-pip install requests
-```
+This application requires [python3](https://docs.python.org/3/)
 
 ## Configure
-1. Set the list of URLs to check (configuration is file testurl.py)
+1. Set the list of URLs to check (configuration is config.py)
 2. Set the mail server configurations
+
+Example
+```
+sites = [
+	'https://yii2-menu.pceuropa.net/',
+	'https://pceuropa.net',
+]
+
+smtp = {
+	'server': 'smtp@example.com:587',
+	'login': 'info@example.com',
+	'password': 'pass',
+	'From': 'info@example.com',
+	'to': 'info@example.com',
+}
+```
 
 ## Usage
 3. Verify the configuration 
@@ -25,5 +38,5 @@ crontab -u username -e
 ```
 add the line 
 ```
-59 23 * * * python3 /path/to/testUrl/testurl.py
+@daily python3 /path/to/testUrl/testurl.py
 ```
